@@ -1,0 +1,206 @@
+# created by fftool
+
+units real
+boundary p p p
+
+atom_style full
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+
+special_bonds lj/coul 0.0 0.0 0.5
+
+# remove hybrid if not necessary
+pair_style hybrid lj/cut/coul/long 12.0 12.0
+pair_modify mix geometric tail yes
+kspace_style pppm 1.0e-5
+
+# read_data data.lmp
+read_restart restart.1844000.lmp
+reset_timestep 0
+
+# remove pair style if not using hybrid
+pair_coeff    1    1 lj/cut/coul/long     0.030000     2.500000  # H00 H00
+pair_coeff    2    2 lj/cut/coul/long     0.065999     3.500000  # C01 C01
+pair_coeff    3    3 lj/cut/coul/long     0.030000     2.500000  # H02 H02
+pair_coeff    4    4 lj/cut/coul/long     0.140000     2.900000  # O03 O03
+pair_coeff    5    5 lj/cut/coul/long     0.065999     3.500000  # C04 C04
+pair_coeff    6    6 lj/cut/coul/long     0.070000     3.550000  # C05 C05
+pair_coeff    7    7 lj/cut/coul/long     0.030000     2.500000  # H06 H06
+pair_coeff    8    8 lj/cut/coul/long     0.030000     2.500000  # H07 H07
+pair_coeff    9    9 lj/cut/coul/long     0.140000     2.900000  # O08 O08
+pair_coeff   10   10 lj/cut/coul/long     0.210000     2.960000  # O09 O09
+pair_coeff   11   11 lj/cut/coul/long     0.018279     2.126000  # Li Li
+pair_coeff   12   12 lj/cut/coul/long     0.200000     3.740000  # P P
+pair_coeff   13   13 lj/cut/coul/long     0.060994     3.120000  # FP FP
+
+write_data     StructureInitial.txt
+
+# #Relaxation
+# # minimize 1.0e-4 1.0e-6 100 1000
+# # reset_timestep 0
+
+
+# # Minimization with Steepest Descent
+# thermo 100
+# thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+# dump            mydump1 all cfg 100 dump_min_SD*.cfg mass type xs ys zs id
+# dump_modify     mydump1 element H C H O C C H H O O Li P F 
+
+# min_style       sd
+# minimize        1e-6 1000.0 10000 100000
+
+# # Minimization with Conjugate Gradient
+# reset_timestep 0
+# thermo 100
+# thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+# undump          mydump1
+# dump            mydump2 all cfg 100 dump_min_CG*.cfg mass type xs ys zs id
+# dump_modify     mydump2 element H C H O C C H H O O Li P F
+
+# min_style       cg
+# minimize        1e-6 10.0 10000 100000
+
+# write_data      data_opt.txt
+
+# reset_timestep 0
+
+# # Equilibration in NPT Ensemble
+# fix SHAKE all shake 0.0001 20 0 b 1 2 6 7
+
+neighbor 2.0 bin
+# # neigh_modify delay 0 every 1 check yes
+
+# timestep 1.0
+
+# variable TK equal 298.15
+# variable PBAR equal 1.0
+
+# velocity all create ${TK} 12345
+
+# fix TPSTAT all npt temp ${TK} ${TK} 100 iso ${PBAR} ${PBAR} 1000
+
+# thermo 1000
+# thermo_style custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+
+# undump      mydump2
+# dump        mydump3 all cfg 10000 dump_eq*.cfg mass type xs ys zs id
+# dump_modify mydump3 element H C H O C C H H O O Li P F
+
+# dump        TRAJ all custom 10000 dump.lammpstrj id mol type element q xu yu zu
+# dump_modify TRAJ element H C H O C C H H O O Li P F
+
+# # restart 10000 restart1.lmp restart2.lmp
+# restart 1000 restart.*.lmp 
+# # variable       s equal stride(1980000,2000000,100)
+# # restart        v_s tmp.restart
+
+# # uncomment the following to rescale to average volume at end of equilibration
+# #variable vinst equal vol
+# #fix VAVG all ave/time 10 1000 50000 v_vinst
+
+# #run 50000
+
+# #variable lscale equal (f_VAVG/v_vinst)^(1.0/3.0)
+# #print "scaling coordinates by ${lscale}"
+# #change_box all x scale ${lscale} y scale ${lscale} z scale ${lscale} remap
+
+# #unfix VAVG
+# #unfix TPSTAT
+# #fix TSTAT all nvt temp ${TK} ${TK} 100
+
+# compute         RDF1 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 
+# fix             1 all ave/time 1 100000 100000 c_RDF1[*] file RDF_1_100000_100000_bin3000.rdf mode vector
+
+# compute         RDF2 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 
+# fix             2 all ave/time 1 1000000 1000000 c_RDF2[*] file RDF_1_1000000_1000000_bin3000.rdf mode vector
+
+# compute         RDF3 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 
+# fix             3 all ave/time 1 500000 500000 c_RDF3[*] file RDF_1_500000_500000_bin3000.rdf mode vector
+
+# compute         RDF4 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 
+# fix             4 all ave/time 1 5000000 5000000 c_RDF4[*] file RDF_1_5000000_5000000_bin3000.rdf mode vector
+
+# run 2000000
+
+# write_data data.eq.lmp
+
+timestep        1
+velocity        all create 500.15 12345
+
+#Melting
+fix             2 all nvt temp 500.15 500.15 100.0
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+dump            mydump1 all cfg 10000 dumpMelting_*.cfg mass type xs ys zs id
+dump_modify     mydump1 element H C H O C C H H O O Li P F
+run             2000000
+
+#quenching 4 steps
+unfix           2
+fix             3 all nvt temp 500.15 450.15 100.0
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+undump          mydump1
+dump            mydump2 all cfg 10000 dumpQ1_*.cfg mass type xs ys zs id
+dump_modify     mydump2 element H C H O C C H H O O Li P F
+run             750000
+
+unfix           3
+fix             4 all nvt temp 450.15 400.15 100.0
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+undump          mydump2
+dump            mydump3 all cfg 10000 dumpQ2_*.cfg mass type xs ys zs id
+dump_modify     mydump3 element H C H O C C H H O O Li P F
+run             750000
+
+unfix           4
+fix             5 all nvt temp 400.15 350.15 100.0
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+undump          mydump3
+dump            mydump4 all cfg 10000 dumpQ3_*.cfg mass type xs ys zs id
+dump_modify     mydump4 element H C H O C C H H O O Li P F
+run             750000
+
+unfix           5
+fix             6 all nvt temp 350.15 298.15 100.0
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+undump          mydump4
+dump            mydump5 all cfg 10000 dumpQ4_*.cfg mass type xs ys zs id
+dump_modify     mydump5 element H C H O C C H H O O Li P F
+run             750000
+
+write_data     data.beforePR.lmp
+
+#production run
+unfix           6
+fix             7 all nvt temp 298.15 298.15 100.0
+
+compute         RDF1 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 11 6 11 5 11 2
+fix             8 all ave/time 1 100000 100000 c_RDF1[*] file RDF_1_100000_100000_bin3000.rdf mode vector
+
+compute         RDF2 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 11 6 11 5 11 2
+fix             9 all ave/time 1 1000000 1000000 c_RDF2[*] file RDF_1_1000000_1000000_bin3000.rdf mode vector
+
+compute         RDF3 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 11 6 11 5 11 2
+fix             10 all ave/time 1 500000 500000 c_RDF3[*] file RDF_1_500000_500000_bin3000.rdf mode vector
+
+compute         RDF4 all rdf 3000 11 10 11 9 11 4 11 13 11 11 11 12 11 6 11 5 11 2
+fix             11 all ave/time 1 5000000 5000000 c_RDF4[*] file RDF_1_5000000_5000000_bin3000.rdf mode vector
+
+
+thermo          1000
+thermo_style    custom step cpu etotal ke pe evdwl ecoul elong temp press vol density lx ly lz
+undump          mydump5
+dump            mydump6 all cfg 10000 dumpRunProduction_*.cfg mass type xs ys zs id
+dump_modify     mydump6 element H C H O C C H H O O Li P F
+
+restart        1000000 restart.*.lmp
+
+run             5000000
+
+
+write_data     data.afterPR.lmp

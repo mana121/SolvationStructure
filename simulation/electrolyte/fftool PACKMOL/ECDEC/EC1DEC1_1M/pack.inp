@@ -1,0 +1,24 @@
+# created by fftool
+tolerance 2.5
+filetype xyz
+output simbox.xyz
+
+structure EC_pack.xyz
+  number 564
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure
+
+structure DEC_pack.xyz
+  number 311
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure
+
+structure Li_pack.xyz
+  number 75
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure
+
+structure PF6_pack.xyz
+  number 75
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure

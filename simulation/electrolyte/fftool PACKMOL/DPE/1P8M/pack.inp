@@ -1,0 +1,19 @@
+# created by fftool
+tolerance 2.5
+filetype xyz
+output simbox.xyz
+
+structure DPE_pack.xyz
+  number 542
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure
+
+structure Li_pack.xyz
+  number 135
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure
+
+structure fsi_pack.xyz
+  number 135
+  inside box 1.5000 1.5000 1.5000 48.5000 48.5000 48.5000
+end structure

@@ -1,0 +1,38 @@
+SYSTEM = electrolyte 
+
+# Starting parameters for this run:
+   ISTART =       0    #job   : 0-new, 1-cont, 2-samecut
+
+# Electronic Relaxation:
+   PREC   =  Normal
+   ALGO    = Normal
+   ADDGRID = .TRUE.   #reduce the noise in the forces
+   SYMPREC = 1E-10
+   ENCUT  =  520
+   EDIFF  =  1E-06    #energy stopping-criterion for ELM
+   LREAL  =  Auto
+   LWAVE   = .FALSE.  #write WAVECAR
+   LCHARG  = .FALSE.
+
+# Ionic Relaxation:
+   NSW    =   1000    #max number of geometry steps
+   IBRION =     2     #ionic relax: 0-MD, 1-quasi-Newton, 2-CG, 3-Damped MD
+   EDIFFG =    -0.02  #force (eV/A) stopping-criterion for geometry steps
+   ISIF   =     2     #(force|stress|ions|shape|vol 0:ynynn 1:yyynn 2:yyynn 3:yyyyy)
+#  ISYM   =     0     #(1-use symmetry, 0-no symmetry)
+
+# DOS related values:
+   ISMEAR =     0     #(-1-Fermi, 1-Methfessel/Paxton, 0:Gaussian, -5:Blochl tetrahedron)
+   SIGMA  =     0.05  #broadening in eV
+
+# Spin-polarized calculations:
+  ISPIN = 1   
+
+# Parallelization
+  NCORE  =  1
+
+# VDW correction
+  IVDW = 11
+
+# XC functional
+  GGA = PE                                                                        

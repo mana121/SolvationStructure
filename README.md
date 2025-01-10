@@ -1,4 +1,4 @@
-# SolvationStructure s
+# SolvationStructure 
 
 **SolvationStructuree**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
 

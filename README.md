@@ -92,7 +92,7 @@ Visualization Software:
 Remote cluster: 
 
 ```bash
-sbatch job_script.sh
+sbatch submit_lammps.slurm
 ```
 Local machine (For small system): 
 

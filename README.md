@@ -166,6 +166,6 @@ This project is distributed under the MIT License; refer to the [LICENSE](https:
 
 ## Note
 
-This project used [LAMMPS](https://lammps.org/#gsc.tab=0), version 23 Jun 2022.
+This project used [LAMMPS](https://lammps.org/download.html), version 23 Jun 2022.
 
 Sorry for the excessive commits in README.md; I was dealing with the **unsaved changes bug**. I resolved it by switching to another browser 😅.

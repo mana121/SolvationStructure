@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Project Overview](#Project Overview)
+- [Overview](#overview)
 
 ## Project Overview
 

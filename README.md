@@ -4,6 +4,10 @@
 
 ## Project Overview
 
+![MD snapshots of electrolyte](https://github.com/mana121/SolvationStructure/blob/main/results/3D_simulation_box_1P8M_DPE_FEME_1M_ECDEC.svg)
+
+_Figure: MD snapshots of the simulation box at 5 ns of the production run: (a) DPE+1.8M $\ce{LiFSI}$, (b) FEME+1.8M $\ce{LiFSI}$, and (c) 1:1 EC/DEC+1M $\ce{LiPF6}$._
+
 This project focuses on studying the solvation structures of lithium ions $\ce{Li+}$ in three distinct electrolytes used in lithium-ion batteries. These include: 
 
 1. $\ce{LiFSI}$ with Dipropyl Ether (DPE)
@@ -146,4 +150,4 @@ Full documentation of this project is available on
 
 This project used [LAMMPS](https://lammps.org/#gsc.tab=0), version 23 Jun 2022.
 
-Sorry for the excessive commits in README.md; I was dealing with the unsaved changes bug. I resolved it by switching to another browser.
+Sorry for the excessive commits in README.md; I was dealing with the **unsaved changes bug**. I resolved it by switching to another browser 😅.

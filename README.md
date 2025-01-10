@@ -108,10 +108,11 @@ Full documentation of this project is available on
 
 
 ```
-├── AUTHORS.md                     <- List of authors.
+├── AUTHORS.md                    <- List of authors.
 ├── README.md                     <- README for users.
 ├── molecule_count                <- Python code to calculate salt and solvent molecules in the simulation box.
 ├── results                       <- RDF and CN graphs.
+├── LICENSE                                <- RDF and CN graphs.
 └── simulation
     ├── electrolyte
     │   ├── LAMMPS                <- Modified LAMMPS input files for energy minimization, equilibration, melting, quenching, and production run.

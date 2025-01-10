@@ -2,6 +2,10 @@
 
 **SolvationStructure**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
 
+## Table of Contents
+
+- [Project Overview](#Project Overview)
+
 ## Project Overview
 
 ![MD snapshots of electrolyte](https://github.com/mana121/SolvationStructure/blob/main/results/3D_simulation_box_1P8M_DPE_FEME_1M_ECDEC.svg)

@@ -4,7 +4,18 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Project Overview](#Project-Overview)
+- [Clone the Repository](#Clone-the-Repository)
+- [Tutorials](#Tutorials)
+- [Obtaining OPLS-AA Parameters](#Obtaining-OPLS-AA-Parameters)
+- [Generating Initial Input Files For MD Simulations](#Generating-Initial-Input-Files-For-MD-Simulations)
+- [Running MD Simulations in LAMMPS](#Running-MD-Simulations-in-LAMMPS)
+- [Runing DFT Calculation in VASP](#Runing-DFT-Calculation-in-VASP)
+- [Documentation](#Documentation)
+- [Project Organization](#Project-Organization)
+- [Contact Information](#Contact-Information)
+- [License](#License)
+- [References](#References)
 
 ## Project Overview
 

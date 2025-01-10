@@ -32,8 +32,6 @@ In this tutorial, you will learn to:
 4. Generate input files for running:
    - MD simulations in [LAMMPS](https://lammps.org/#gsc.tab=0)
    - DFT calculations in [VASP](https://www.vasp.at)
-- MD simulations in [LAMMPS](https://lammps.org/#gsc.tab=0)
-- DFT calculations in [VASP](https://www.vasp.at)
   
 A detailed discussion of Steps 1, 2, and 3 can be found in this [blog post](https://longkunxuluke.github.io/posts/2020/11/blog-post-4/).
 

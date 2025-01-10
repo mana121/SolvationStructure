@@ -1,6 +1,6 @@
 # SolvationStructure 
 
-**SolvationStructuree**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
+**SolvationStructure**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
 
 ## Project Overview
 
@@ -14,7 +14,7 @@ This project focuses on studying the solvation structures of lithium ions $\ce{L
 2. $\ce{LiFSI}$ with 2,2-Difluoroethyl Methyl Ether (FEME)
 3. $\ce{LiPF6}$ with a mixture of Ethylene Carbonate (EC) and Diethyl Carbonate (DEC)
    
-The solvation behavior is analyzed through molecular dynamics (MD) simulations and Density Functional Theory (DFT) calculations. Key aspects, including radial distribution functions (RDF), coordination numbers (CN), quantum mechanical properties, and concentration effects, are explored to enhance the understanding of electrolyte structures.
+The solvation behavior is analyzed through Molecular Dynamics (MD) simulations and Density Functional Theory (DFT) calculations. Key aspects, including radial distribution functions (RDF), coordination numbers (CN), quantum mechanical properties, and concentration effects, are explored to enhance the understanding of each electrolyte structure.
 
 ## Clone the Repository
 
@@ -30,7 +30,7 @@ This tutorial will guide you on how to model an electrolyte system.
 
 In this tutorial, you will learn to:
 
-1. Obtain **OPLS-AA** force field parameters using the [LigParGen](https://traken.chem.yale.edu/ligpargen/) server
+1. Obtain **OPLS-AA** force field parameters using the [LigParGen](https://traken.chem.yale.edu/ligpargen/) server.
 2. Utilize the [fftool](https://github.com/paduagroup/fftool) to creates initial files for MD simulations.
 3. Utilize [PACKMOL](https://m3g.github.io/packmol/) to pack molecules into the simulation box.
 4. Generate input files for running:
@@ -39,7 +39,10 @@ In this tutorial, you will learn to:
   
 A detailed discussion of Steps 1, 2, and 3 can be found in this [blog post](https://longkunxuluke.github.io/posts/2020/11/blog-post-4/).
 
-For the visualization of molecular structures, [VESTA](https://jp-minerals.org/vesta/en/), [OVITO](https://www.ovito.org), and [Maestro](https://www.schrodinger.com/platform/products/maestro/) are used.
+Visualization Software: 
+ - [VESTA](https://jp-minerals.org/vesta/en/)
+ - [OVITO](https://www.ovito.org)
+ - [Maestro](https://www.schrodinger.com/platform/products/maestro/) 
 
 ## Obtaining **OPLS-AA** Parameters
 

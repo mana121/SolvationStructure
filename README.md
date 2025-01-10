@@ -160,7 +160,7 @@ This project is distributed under the MIT License; refer to the [LICENSE](https:
 - [LigParGen](https://traken.chem.yale.edu/ligpargen/) server: [https://doi.org/10.1093/nar/gkx312](https://doi.org/10.1093/nar/gkx312)
 - [PACKMOL](https://m3g.github.io/packmol/) package: [https://doi.org/10.1002/jcc.21224](https://doi.org/10.1002/jcc.21224)
 - [LAMMPS](https://lammps.org/#gsc.tab=0) software: [https://doi.org/10.1016/j.cpc.2021.108171](https://doi.org/10.1016/j.cpc.2021.108171)
-- [VASP](https://www.vasp.at) manual: [https://www.vasp.at/wiki/index.php/The_VASP_Manual](https://www.vasp.at/wiki/index.php/The_VASP_Manual)
+- [VASP]([https://www.vasp.at/wiki/index.php/The_VASP_Manual]) manual:
 - [VASPKIT](https://vaspkit.com) documentation
 
 ## Note

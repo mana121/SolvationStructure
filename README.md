@@ -1,4 +1,4 @@
-# SolvationStructure           fixing issues
+# SolvationStructure 
 
 **SolvationStructuree**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
 
@@ -145,3 +145,5 @@ Full documentation of this project is available on
 ## Note
 
 This project used [LAMMPS](https://lammps.org/#gsc.tab=0), version 23 Jun 2022.
+
+Sorry for the excessive commits in README.md; I was dealing with the unsaved changes bug. I resolved it by switching to another browser.

@@ -1,6 +1,6 @@
-# LiSolvXplore
+# Solvation Structure
 
-**LiSolvXplore**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
+**Solvation Structuree**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.
 
 ## Project Overview
 

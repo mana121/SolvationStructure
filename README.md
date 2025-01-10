@@ -54,9 +54,9 @@ For the visualization of molecular structures, [VESTA](https://jp-minerals.org/v
 ## Generating Initial Input Files For MD Simulations
 
 1. Calculate the number of salt and solvent molecules in the electrolyte for a specific concentration using [solvent_salt_molecule_count.ipynb](https://github.com/mana121/SolvationStructure/tree/main/molecule_count). For 1.8M DPE+$\CE{LiFSI}$ electrolyte system with a simulation box of length 50 Å, the composition is:
-   * 542 DPE solvent molecules
-   * 135 $\ce{Li+}$ ions
-   * 135 $\ce{FSI-}$ ions.
+   - 542 DPE solvent molecules
+   - 135 $\ce{Li+}$ ions
+   - 135 $\ce{FSI-}$ ions.
      
 3. Use fftool to create an input file (`pack.inp`) for packmol. 
 

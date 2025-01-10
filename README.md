@@ -65,18 +65,18 @@ Visualization Software:
    - 135 $\ce{Li+}$ ions
    - 135 $\ce{FSI-}$ ions.
      
-3. Use fftool to create an input file (`pack.inp`) for PACKMOL. 
+2. Use fftool to create an input file (`pack.inp`) for PACKMOL. 
 
    ```bash
    fftool 542 DPE.xyz 135 Li.zmat 135 fsi.zmat -b 50.0  
    ```
-4. Use PACKMOL to generate the atomic coordinates in the simulation box which will save in `simbox.xyz`.
+3. Use PACKMOL to generate the atomic coordinates in the simulation box which will save in `simbox.xyz`.
 
    ```bash
    packmol < pack.inp      
    ```
 
-5. Use fftool to create the LAMMPS input script `in.lmp` and data file `data.lmp`.
+4. Use fftool to create the LAMMPS input script `in.lmp` and data file `data.lmp`.
 
    ```bash
    fftool 542 DPE.xyz 135 Li.zmat 135 fsi.zmat -b 50.0 -l

@@ -7,11 +7,24 @@
 [![OVITO Version](https://img.shields.io/badge/OVITO-Version%203.8.4-darkblue)](https://www.ovito.org)
 [![VASP Version](https://img.shields.io/badge/VASP-v6.2.1-purple)](https://www.vasp.at)
 
-![OVITO Logo](https://www.ovito.org/_astro/ovito_logo_256.QJOLhqx1_1Bxh16.webp)
 
- <img src="https://vaspkit.com/_static/logo.png" alt="VASPKIT Logo" width="60">
- <img src="https://www.vasp.at/images/logo.png" alt="VASP Logo" width="150">
- <img src="https://lammps.org/movies/logo.gif" alt="LAMMPS Logo" width="200">
+
+<a href="https://www.ovito.org">
+    <img src="https://www.ovito.org/_astro/ovito_logo_256.QJOLhqx1_1Bxh16.webp" alt="VASPKIT Logo" width="50">
+</a>
+
+<a href="https://vaspkit.com">
+    <img src="https://vaspkit.com/_static/logo.png" alt="VASPKIT Logo" width="60">
+</a>
+
+<a href="https://www.vasp.at">
+    <img src="https://www.vasp.at/images/logo.png" alt="VASP Logo" width="150">
+</a>
+
+<a href="https://lammps.org/#gsc.tab=0">
+    <img src="https://lammps.org/movies/logo.gif" alt="LAMMPS Logo" width="200">
+</a>
+
 
 
 

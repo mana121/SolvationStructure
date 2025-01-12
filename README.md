@@ -3,7 +3,7 @@
 [![Packmol Version](https://img.shields.io/badge/PACKMOL-Version%2020.14.3-yellow)](https://m3g.github.io/packmol/)
 [![fftool Version](https://img.shields.io/badge/fftool-Version%2024%2F01%2F18-green)](https://github.com/paduagroup/fftool)
 [![LAMMPS Version](https://img.shields.io/badge/LAMMPS-Version%2023%20Jun%202022-darkgreen)](https://lammps.org/#gsc.tab=0)
-[![VASPKIT Version](https://img.shields.io/badge/VASPKIT-Version%201.4.0-blue)](https://vaspkit.com)
+[![VASPKIT Version](https://img.shields.io/badge/VASPKIT-Version%201.4.1-blue)](https://vaspkit.com)
 [![OVITO Version](https://img.shields.io/badge/OVITO-Version%203.8.4-darkblue)](https://www.ovito.org)
 [![VASP Version](https://img.shields.io/badge/VASP-v6.2.1-purple)](https://www.vasp.at)
 

@@ -1,3 +1,5 @@
+[![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mana121/SolvationStructure/blob/main/LICENSE)
+
 # SolvationStructure 
 
 **SolvationStructure**: MD and DFT Study of $\ce{Li+}$ Solvation Structures in Ether and Carbonate Based Electrolytes.

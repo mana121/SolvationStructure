@@ -1,7 +1,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-red)](https://github.com/mana121/SolvationStructure/blob/main/LICENSE)
 [![LigParGen-OPLSAA](https://img.shields.io/badge/LigParGen-OPLSAA-orange)](https://traken.chem.yale.edu/ligpargen/)
 [![Packmol Version](https://img.shields.io/badge/PACKMOL-Version%2020.14.3-yellow)](https://m3g.github.io/packmol/)
-[![fftool Version](https://img.shields.io/badge/FFToo-2024%2F10%2F17-green)](https://github.com/paduagroup/fftool)
+[![fftool Version](https://img.shields.io/badge/fftool-2024%2F10%2F17-green)](https://github.com/paduagroup/fftool)
 [![LAMMPS Version](https://img.shields.io/badge/LAMMPS-Version%2023%20Jun%202022-darkgreen)](https://lammps.org/#gsc.tab=0)
 [![VASPKIT Version](https://img.shields.io/badge/VASPKIT-Version%201.4.0-darkblue)](https://vaspkit.com)
 [![OVITO Version](https://img.shields.io/badge/OVITO-Version%203.8.4-blue)](https://www.ovito.org)

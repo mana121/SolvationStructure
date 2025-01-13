@@ -1,16 +1,17 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-red)](https://github.com/mana121/SolvationStructure/blob/main/LICENSE)
-[![LigParGen-OPLSAA](https://img.shields.io/badge/LigParGen-OPLSAA-orange)](https://traken.chem.yale.edu/ligpargen/)
-[![Packmol Version](https://img.shields.io/badge/PACKMOL-Version%2020.14.3-yellow)](https://m3g.github.io/packmol/)
+[![LigParGen-OPLS-AA](https://img.shields.io/badge/LigParGen-OPLS--AA-orange)](https://traken.chem.yale.edu/ligpargen/)
+[![PACKMOL Version](https://img.shields.io/badge/PACKMOL-Version%2020.14.3-yellow)](https://m3g.github.io/packmol/)
 [![fftool Version](https://img.shields.io/badge/fftool-Version%2024%2F01%2F18-green)](https://github.com/paduagroup/fftool)
 [![LAMMPS Version](https://img.shields.io/badge/LAMMPS-Version%2023%20Jun%202022-darkgreen)](https://lammps.org/#gsc.tab=0)
-[![VASPKIT Version](https://img.shields.io/badge/VASPKIT-Version%201.4.1-blue)](https://vaspkit.com)
-[![OVITO Version](https://img.shields.io/badge/OVITO-Version%203.8.4-darkblue)](https://www.ovito.org)
-[![VASP Version](https://img.shields.io/badge/VASP-v6.2.1-purple)](https://www.vasp.at)
+[![OVITO Version](https://img.shields.io/badge/OVITO-Version%203.8.4-blue)](https://www.ovito.org)
+[![VASP Version](https://img.shields.io/badge/VASP-v6.2.1-darkblue)](https://www.vasp.at)
+[![VASPKIT Version](https://img.shields.io/badge/VASPKIT-Version%201.4.1-purple)](https://vaspkit.com)
+
 
 
 
 <a href="https://www.ovito.org">
-    <img src="https://www.ovito.org/_astro/ovito_logo_256.QJOLhqx1_1Bxh16.webp" alt="VASPKIT Logo" width="50">
+    <img src="https://www.ovito.org/_astro/ovito_logo_256.QJOLhqx1_1Bxh16.webp" alt="OVITO Logo" width="50">
 </a>
 
 <a href="https://vaspkit.com">

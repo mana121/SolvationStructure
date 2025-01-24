@@ -177,7 +177,7 @@ The SCF calculation is performed on the optimized structure (**CONTCAR**) follow
 
 ## Documentation
 
-Full documentation of this project is available on 
+Full documentation of this project is available on [arXiv](https://arxiv.org/abs/2501.11932)
 
 ## Project Organization
 

@@ -221,14 +221,11 @@ This project is distributed under the MIT License; refer to the [LICENSE](https:
 ## Citation
 
 ```bash
-@misc{hasan2025computationalstudylisolvation,
-      title={Computational Study of Li+ Solvation Structures in Fluorinated Ether, Non-Fluorinated Ether, and Organic Carbonate-Based Electrolytes at Low and High Salt Concentrations}, 
-      author={Rumana Hasan and Dibakar Datta},
-      year={2025},
-      eprint={2501.11932},
-      archivePrefix={arXiv},
-      primaryClass={physics.chem-ph},
-      url={https://arxiv.org/abs/2501.11932}, 
+@article{hasan2025computational,
+  title={Computational Study of Li+ Solvation Structures in Fluorinated Ether, Non-Fluorinated Ether, and Organic Carbonate-Based Electrolytes at Low and High Salt Concentrations},
+  author={Hasan, Rumana and Datta, Dibakar},
+  journal={arXiv preprint arXiv:2501.11932},
+  year={2025}
 }
 ```
 

@@ -190,10 +190,10 @@ Full documentation of this project is available on [arXiv](https://arxiv.org/abs
 ├── LICENSE                       <- LICENSE file.
 └── simulation
     ├── electrolyte
-    │   ├── LAMMPS                <- Modified LAMMPS input files for energy minimization, equilibration, melting, quenching, and production run.
+    │   ├── LAMMPS                <- Modified LAMMPS input scripts for energy minimization, equilibration, melting, quenching, and production run.
     │   ├── LigParGen server      <- Parameters from LigParGen.
     │   ├── convert LigParGen     <- fftool style parameter conversion.
-    │   └── fftool PACKMOL        <- Initial LAMMPS input files.
+    │   └── fftool PACKMOL        <- Initial LAMMPS input scripts.
     └── solvation structure
         ├── INCAR                 <- INCAR files for DFT in VASP.
         └── geometry opt          <- CONTCAR files from DFT in VASP.

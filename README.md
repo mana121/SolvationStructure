@@ -130,7 +130,7 @@ Visualization Software:
    packmol < pack.inp      
    ```
 
-4. Use fftool to create the LAMMPS input script `in.lmp` and data file `data.lmp`.
+4. Use fftool to create the initial LAMMPS input script `in.lmp` and data file `data.lmp`.
 
    ```bash
    fftool 542 DPE.xyz 135 Li.zmat 135 fsi.zmat -b 50.0 -l
@@ -190,7 +190,7 @@ Full documentation of this project is available on [arXiv](https://arxiv.org/abs
 ├── LICENSE                       <- LICENSE file.
 └── simulation
     ├── electrolyte
-    │   ├── LAMMPS                <- LAMMPS input files for energy minimization, equilibration, melting, quenching, and production run.
+    │   ├── LAMMPS                <- Modified LAMMPS input files for energy minimization, equilibration, melting, quenching, and production run.
     │   ├── LigParGen server      <- Parameters from LigParGen.
     │   ├── convert LigParGen     <- fftool style parameter conversion.
     │   └── fftool PACKMOL        <- Initial LAMMPS input files.
